@@ -1,24 +1,6 @@
 {
   "version": 2,
   "buildCommand": "pnpm build",
-  "devCommand": "pnpm dev",
   "installCommand": "pnpm install",
-  "framework": null,
-  "outputDirectory": "dist/public",
-  "rewrites": [
-    {
-      "source": "/api/trpc/:path*",
-      "destination": "/api/trpc"
-    },
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
-    }
-  ],
-  "functions": {
-    "dist/index.js": {
-      "runtime": "nodejs22.x",
-      "includeFiles": "dist/**"
-    }
-  }
+  "outputDirectory": "dist/public"
 }
